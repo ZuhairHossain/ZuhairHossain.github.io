@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am <b> Syed Zuhair Hossain </b> (you can simply call me <b>Zuhair</b>) from <b>Dhaka, Bangladesh</b>. I am a passionate graduate student with a strong interest in Science and Arts. I am into learning new things about technology and research methodology with an engineering mindset. Completed my undergrad  in <a style="text-decoration: none" href="https://cse.buet.ac.bd/">Computer Science and Engineering (CSE)</a> as major at <a style="text-decoration: none" href="https://www.buet.ac.bd/web/#/">Brac University</a> in May, 2023.
+Hello, I am <b> Syed Zuhair Hossain </b> (you can call me <b>Zuhair</b>) from <b>Dhaka, Bangladesh</b>. I am a passionate graduate student with a strong interest in Science and Arts. I am into learning new things about technology and research methodology with an engineering mindset. Completed my undergrad  in <a style="text-decoration: none" href="https://cse.buet.ac.bd/">Computer Science and Engineering (CSE)</a> as major at <a style="text-decoration: none" href="https://www.buet.ac.bd/web/#/">Brac University</a> in May, 2023.
 
 I am currently working in the Platform Architecture and Operations Department of ITP Division at  <a style="text-decoration: none" href="https://www.reddotdigitalit.com/">RedDot Digital IT Ltd (subsidiary of Robi Axiata Ltd.)</a> as a DevOps Engineer since February 2023. 
 
