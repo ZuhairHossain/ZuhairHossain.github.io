@@ -26,7 +26,7 @@ author:
   pronouns         : "he/him" # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Dhaka, Bangladesh"
-  employer         : "Red Dot Digital IT Ltd"
+  employer         : # "Red Dot Digital IT Ltd"
   uri              : # URL
   email            : "syed.zuhair.hossain@g.bracu.ac.bd" 
 
