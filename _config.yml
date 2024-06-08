@@ -21,10 +21,10 @@ repository               : # "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "720.png"
   name             : "Zuhair Hossain"
-  pronouns         : "he/him" # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  pronouns         : "(he/him)" # example: "she/her"  
+  bio              : "DevOps Engineer & HCI Enthusiast"
   location         : "Dhaka, Bangladesh"
   employer         : # "Red Dot Digital IT Ltd"
   uri              : # URL
