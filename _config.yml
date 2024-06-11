@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Zuhair Hossain"
+title                    : "Syed Zuhair Hossain"
 title_separator          : "-"
 name                     : &name "Syed Zuhair Hossain"
 description              : &description "personal description"
@@ -22,7 +22,7 @@ repository               : # "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "720.png"
-  name             : "Zuhair Hossain"
+  name             : "Syed Zuhair Hossain"
   pronouns         : "(he/him)" # example: "she/her"  
   bio              : "DevOps Engineer & HCI Enthusiast"
   location         : "Dhaka, Bangladesh"
