@@ -15,3 +15,14 @@ I am currently working in the Platform Architecture and Operations Department of
 Before joining as DevOps engineer, I have completed my undergraduate thesis on Human Computer Interaction (HCI) under the guidance of Assistant Professor, <a style="text-decoration: none" href="https://scholar.google.com/citations?user=nUColk4AAAAJ&hl=en">Dr. Jannatun Noor Mukta</a> in collaboration with Professor, <a style="text-decoration: none" href="https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en">Dr. A. B. M. Alim Al Islam</a>, <a style="text-decoration: none" href="https://scholar.google.com/citations?user=8it468kAAAAJ&hl=en">Dr. Tanjir Rashid Soron</a> and <a style="text-decoration: none" href="https://scholar.google.com/citations?user=S4XSndkAAAAJ&hl=en">Dr. Md. Golam Zel Asmaul Husna</a>. We are honored to received a prestigious <i>research grant</i> from <b>Brac University</b>, which enables us to expand our research work.
 
 My research interests focus on <b>Human-Computer Interaction</b>, aiming to solve real-world problems faced by <b>marginalized communities</b> to enhance <b>social good</b>. I am also interested to explore <b>Augmented Reality</b>, <b>Virtual Reality</b> and <b>Computational Social Science</b>. I am actively looking for <b>Research Assistant</b> and <b>Research Collaboration</b> positions in Human Computer Interaction research labs. You can also knock me with positions in Software Engineering industry, mentoring and educational content development opportunities.
+
+
+## News and Updates
+
+- **February, 2024**: Published my first authored poster in Proceedings of the 25th International Workshop on Mobile Computing Systems and Applications. <a style="text-decoration: none" href="https://doi.org/10.1145/3638550.3643630">[Details]</a>
+- **June, 2023**: Landed my first job offer! I am working as a DevOps Engineer in <a style="text-decoration: none" href="https://www.reddotdigitalit.com/">RedDot Digital IT Ltd. (a subsidiary of Robi Axiata Ltd.)</a>. Looking forward to this new journey in industry!
+- **December, 2023**: Presented one student research posters at the <a style="text-decoration: none" href="https://cse.buet.ac.bd/nsyss2023/"> 10th NSysS 2023</a> held at ECE Building, BUET. Attended as a poster presented in NSysS for the first time.
+- **June, 2023**: Awarded with Brac University Research Grant 2023 for Undergraduate thesis project. <a style="text-decoration: none" href="https://www.bracu.ac.bd/academics/teaching-and-research">[Details]</a>
+- **May, 2023**: Successfully completed my remarkable undergraduate journey in Computer Science and Engineering at Brac University.
+- **April, 2023**: Successfully delivered and defended my undergraduate thesis presentation, achieving an outstanding score of 95%.
+
