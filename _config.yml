@@ -138,8 +138,8 @@ social:
 # Analytics
 analytics:
   provider               : "goatcounter", "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          : "G-7XFLKFN4E1"
+  google-analytics-4:
+    tracking_id          : G-7XFLKFN4E1
   goatcounter            :
     code		             : zuhair
 
