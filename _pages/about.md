@@ -6,16 +6,6 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7XFLKFN4E1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7XFLKFN4E1');
-</script>  
 ---
 
 Hello, I am <b> Syed Zuhair Hossain </b> (you can call me <b>Zuhair</b>) from <b>Dhaka, Bangladesh</b>. I am a passionate tech-enthusiast with a strong interest in Science and Arts. I am into learning new things about technology and research methodology with an engineering mindset. I have completed my undergrad  in <a style="text-decoration: none" href="https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering">Computer Science and Engineering (CSE)</a> as major at <a style="text-decoration: none" href="https://www.bracu.ac.bd/">Brac University</a> in May, 2023.
