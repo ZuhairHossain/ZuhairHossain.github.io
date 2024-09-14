@@ -18,9 +18,31 @@ layout: compress
 
     {{ content }}
 
-    <div>
-      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=9f9f9f&w=800&t=tt&d=B9UobSFA0_VBpdODQqAwoKh0kULg9emDhv4XjtLg3QU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+    <div id="map-container">
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=9f9f9f&w=800&t=tt&d=B9UobSFA0_VBpdODQqAwoKh0kULg9emDhv4XjtLg3QU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080"></script>
     </div>
+    
+    <style>
+      /* Default size for desktop */
+      #map-container {
+        width: 800px;
+      }
+    
+      /* Media query for tablets and smaller screens */
+      @media (max-width: 1024px) {
+        #map-container {
+          width: 600px;
+        }
+      }
+    
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        #map-container {
+          width: 100%;
+        }
+      }
+    </style>
+    
             
     <div class="page__footer">
       <footer>
