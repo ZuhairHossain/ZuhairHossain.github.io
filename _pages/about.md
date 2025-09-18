@@ -20,7 +20,7 @@ Before joining as DevOps engineer, I have completed my undergraduate thesis on H
 
 
 ## News and Updates
-- **September, 2025**: Landed into my second where I am working as a System Administrator in <a style="text-decoration: none" href="https://therapbd.com/">Therap (BD) Ltd.</a> in DevOps Team.
+- **September, 2025**: Landed into my second job where I am working as a System Administrator in <a style="text-decoration: none" href="https://therapbd.com/">Therap (BD) Ltd.</a> in DevOps Team.
 - **December, 2024**: Will present my first authored paper in NSysS’24: 11th International Conference on Networking, Systems and Security 2024. 
 <!-- <a style="text-decoration: none" href="https://doi.org/10.1145/3638550.3643630">[Details]</a> -->
 - **February, 2024**: Published my first authored poster in Proceedings of the 25th International Workshop on Mobile Computing Systems and Applications. <a style="text-decoration: none" href="https://doi.org/10.1145/3638550.3643630">[Details]</a>
