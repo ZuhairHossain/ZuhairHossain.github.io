@@ -1,0 +1,99 @@
+// ============================================
+// Experience Timeline
+// ============================================
+// Used on the /experience/ page for work and research history.
+// Each timeline-item has a date sidebar and content area.
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+}
+
+.timeline-item {
+  display: flex;
+  gap: $space-lg;
+  padding: $space-lg;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-lg;
+  transition: all $transition-base;
+
+  &:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-width: $bp-sm) {
+    flex-direction: column;
+    gap: $space-sm;
+  }
+}
+
+.timeline-date {
+  flex-shrink: 0;
+  width: 140px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding-top: 2px;
+
+  @media (max-width: $bp-sm) {
+    width: auto;
+    font-size: 0.75rem;
+  }
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: $space-xs;
+}
+
+.timeline-org {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  font-style: italic;
+  margin-bottom: $space-sm;
+}
+
+.timeline-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: $space-sm;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+}
+
+.timeline-thumb {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: $radius-md;
+  margin-bottom: $space-sm;
+}
+
+// Highlighted experience (e.g., teaching role)
+.timeline-item--highlight {
+  border-color: var(--success);
+  border-left: 3px solid var(--success);
+  background: rgba(5, 150, 105, 0.03);
+}
+
+// "While pursuing BSc" undergrad badge
+.tag--undergrad {
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: #d97706 !important;
+  border: 1px solid #d97706 !important;
+  font-size: 0.7rem;
+}

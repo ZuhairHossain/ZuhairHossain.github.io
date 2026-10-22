@@ -1,5 +1,5 @@
 ---
-title: "Paper: MonChitro: Unveiling The Stress and Depression About Future Among Undergraduate Students"
+title: "Paper: MonChitro: Unveiling The Stress and Depression About Future Among Undergraduate Students"
 collection: publications
 permalink: /publication/paper-monchitro
 date: 2024-12-19

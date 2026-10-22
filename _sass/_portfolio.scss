@@ -1,0 +1,76 @@
+// ============================================
+// Portfolio — Grid and filter
+// ============================================
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  margin-bottom: $space-xl;
+}
+
+.filter-btn {
+  padding: $space-sm $space-md;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: $radius-full;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  background: transparent;
+  transition: all $transition-fast;
+
+  &:hover,
+  &.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $space-xl;
+
+  @media (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-card {
+  @extend .card;
+  display: flex;
+  flex-direction: column;
+
+  &[data-hidden="true"] {
+    display: none;
+  }
+}
+
+.portfolio-card__thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: $radius-md;
+  margin-bottom: $space-md;
+  background: var(--surface-alt);
+}
+
+.portfolio-card__category {
+  @extend .tag;
+  margin-bottom: $space-sm;
+  align-self: flex-start;
+}
+
+.portfolio-card__title {
+  @extend .card-title;
+}
+
+.portfolio-card__desc {
+  @extend .card-excerpt;
+  flex: 1;
+}
+
+.portfolio-card__links {
+  @extend .card-links;
+}

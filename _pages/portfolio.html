@@ -1,14 +1,192 @@
 ---
-layout: archive
+# ============================================
+# PORTFOLIO PAGE
+# ============================================
+# This page is for INDEPENDENT PROJECTS only (not work experience).
+# Work experience and research positions are on the Experience page.
+#
+# HOW TO ADD A NEW PROJECT:
+#   1. Copy any <div class="portfolio-card" data-category="XXX"> block below
+#   2. Change data-category to one of: software, uiux, courses
+#   3. Update the category label, title, description, and tags
+#   4. To add a link button, use: <a href="URL" class="btn btn--outline btn--small">Label</a>
+#   5. To add a thumbnail, use: <img class="portfolio-card__thumb" src="/images/your-image.png" alt="Alt text">
+#
+# HOW TO ADD A NEW FILTER CATEGORY:
+#   1. Add a new <button class="filter-btn"> in the portfolio-filters div
+#   2. Use a unique category name in onclick="filterPortfolio('newcategory')"
+#   3. Use data-category="newcategory" on your portfolio cards
+# ============================================
+layout: single
 title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+<div style="padding: 0.75rem 1rem; background: rgba(245, 158, 11, 0.1); border: 1px solid #d97706; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+  🚧 <strong>Work in progress</strong> - I am actively adding more projects, case studies, and certificates to this page. Stay tuned!
+</div>
 
+<div class="portfolio-filters">
+  <button class="filter-btn active" onclick="filterPortfolio('all')">All</button>
+  <button class="filter-btn" onclick="filterPortfolio('software')">Software Projects</button>
+  <button class="filter-btn" onclick="filterPortfolio('uiux')">UI/UX Design</button>
+  <button class="filter-btn" onclick="filterPortfolio('courses')">Courses & Certs</button>
+</div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="portfolio-grid" id="portfolio-grid">
 
+  <!-- ============================================
+       SOFTWARE PROJECTS
+       Independent projects, hackathon projects, course projects
+       ============================================ -->
+
+  <div class="portfolio-card" data-category="software">
+    <img class="portfolio-card__thumb" src="/images/portfolio-healthcare.png" alt="Healthcare Chatbot">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">Healthcare Chatbot - NLP-based Patient Support</div>
+    <p class="portfolio-card__desc">A text-based healthcare chatbot providing 24/7 access to information and personalized support, reducing burden on healthcare workers. Built with Python, NLP, Heroku, Docker, Ngrok, and Rasa framework.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Python</span>
+      <span class="tag">NLP</span>
+      <span class="tag">Docker</span>
+      <span class="tag">2023</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="software">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">Maternal Health Prediction - ML in Nigeria</div>
+    <p class="portfolio-card__desc">AI algorithms to predict maternal health risks in Nigeria. Developed a user-friendly web app and dashboard for risk assessments and data visualization to enhance maternal health outcomes through targeted interventions.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Python</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">2023</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="software">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">AI-driven Secure Online Marketplace</div>
+    <p class="portfolio-card__desc">Analyzed Bangladesh's e-commerce sector to identify technology, trust, and transaction issues. Developed AI-driven solutions for fraud detection, product recommendations, and marketplace improvements. Findings made open source.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">JavaScript</span>
+      <span class="tag">Python</span>
+      <span class="tag">AI</span>
+      <span class="tag">2021</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="software">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">Crop Yield Prediction - Food Security in Kenya</div>
+    <p class="portfolio-card__desc">Identified underutilized farming land using satellite imaging, applied Kenyan open-source satellite imagery datasets for crop yield prediction, and developed a weather info sharing system for farmers.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">JavaScript</span>
+      <span class="tag">Python</span>
+      <span class="tag">Satellite Imagery</span>
+      <span class="tag">2021</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="software">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">BracU Faculty Info</div>
+    <p class="portfolio-card__desc">An electronic classroom where multiple users can view and simultaneously draw on a "chalkboard" with each person's edits synchronized. Built with Flutter and Dart.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Flutter</span>
+      <span class="tag">Dart</span>
+      <span class="tag">2022</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="software">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">ROBUST - Podcast Platform</div>
+    <p class="portfolio-card__desc">A podcast website where users can listen to audio shows and download audio to personal devices.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">HTML/CSS/JS</span>
+      <span class="tag">PHP</span>
+      <span class="tag">SQL</span>
+      <span class="tag">2020-2021</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       COURSES & CERTIFICATIONS
+       Add courses, workshops, and bootcamps here.
+       ============================================ -->
+
+  <div class="portfolio-card" data-category="courses">
+    <span class="portfolio-card__category">Course</span>
+    <div class="portfolio-card__title">CITI Program - Research Ethics</div>
+    <p class="portfolio-card__desc">Completed CITI Program training on responsible conduct of research and human subjects protection.</p>
+    <div class="portfolio-card__links">
+      <a href="/files/certificates/Hossain_CITI.pdf" class="btn btn--outline btn--small" target="_blank">📄 Certificate</a>
+      <span class="tag">Ethics</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="courses">
+    <span class="portfolio-card__category">Course</span>
+    <div class="portfolio-card__title">Mobile App Development (Flutter) - BASIS & SEIP</div>
+    <p class="portfolio-card__desc">Completed mobile application development course using Flutter framework. Organized by BASIS and Skills for Employment Investment Program (SEIP).</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Flutter</span>
+      <span class="tag">Dart</span>
+      <span class="tag">2021-2022</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="courses">
+    <span class="portfolio-card__category">Course</span>
+    <div class="portfolio-card__title">Writing for Interdisciplinary Computing Audiences - COMPASS '25</div>
+    <p class="portfolio-card__desc">Professional workshop on writing for interdisciplinary computing audiences at COMPASS 2025 conference.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Workshop</span>
+      <span class="tag">Academic Writing</span>
+      <span class="tag">Jul 2025</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="courses">
+    <span class="portfolio-card__category">Course</span>
+    <div class="portfolio-card__title">British Council - Upper-Intermediate (B2) English</div>
+    <p class="portfolio-card__desc">Senior Young Learners, Upper-Intermediate (B2) Level Course at British Council.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">English</span>
+      <span class="tag">B2 Level</span>
+      <span class="tag">2016</span>
+    </div>
+  </div>
+
+  <!-- Add more projects as needed -->
+
+</div>
+
+<script>
+// ============================================
+// PORTFOLIO FILTER SCRIPT
+// Filters cards by category when a filter button is clicked.
+// Categories are defined in data-category attribute on each card.
+// ============================================
+function filterPortfolio(category) {
+  var cards = document.querySelectorAll('.portfolio-card');
+  var buttons = document.querySelectorAll('.filter-btn');
+  
+  buttons.forEach(function(btn) {
+    btn.classList.remove('active');
+  });
+  event.target.classList.add('active');
+  
+  cards.forEach(function(card) {
+    if (category === 'all' || card.getAttribute('data-category') === category) {
+      card.setAttribute('data-hidden', 'false');
+      card.style.display = '';
+    } else {
+      card.setAttribute('data-hidden', 'true');
+      card.style.display = 'none';
+    }
+  });
+}
+</script>

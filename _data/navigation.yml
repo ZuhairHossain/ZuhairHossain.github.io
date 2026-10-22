@@ -1,22 +1,26 @@
-# main links links
+# ============================================
+# NAVIGATION LINKS
+# ============================================
+# These appear in the top navbar (after the "Home" link which is hardcoded).
+# To add a new link: add a new "- title: / url:" entry below.
+# To remove a link: delete or comment out the entry.
+# To reorder: move entries up/down in this list.
+# ============================================
 main:
+  - title: "Research"
+    url: /research/
+
   - title: "Publications"
     url: /publications/
 
-  # - title: "Talks"
-  #   url: /talks/    
+  - title: "Experience"
+    url: /experience/
 
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
+  - title: "Portfolio"
+    url: /portfolio/
+
+  - title: "Blog"
+    url: /blog/
+
   - title: "Resume"
     url: /resume/
-
-  # - title: "Guide"
-  #   url: /markdown/

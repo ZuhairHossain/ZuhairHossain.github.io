@@ -1,36 +1,115 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    {% if site.og_image %}<meta property="og:image" content="{{ site.og_image | absolute_url }}">{% endif %}
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" type="image/x-icon">
+
+    <!-- Feed -->
+    {% if site.atom_feed.hide != true %}<link href="{{ '/feed.xml' | relative_url }}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">{% endif %}
+
+    <!-- Theme: respect system preference, then localStorage -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved) {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    {% if site.analytics.provider == "goatcounter" and site.analytics.goatcounter.code %}
+    <script data-goatcounter="https://{{ site.analytics.goatcounter.code }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {% endif %}
   </head>
 
   <body>
+    <div class="site-wrapper">
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+      <!-- Navigation -->
+      {% include navigation.html %}
 
-    {{ content }}
+      <!-- Main content -->
+      <main class="site-content">
+        {{ content }}
+      </main>
 
-    <div>
-      <!-- <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=9f9f9f&w=600&t=tt&d=B9UobSFA0_VBpdODQqAwoKh0kULg9emDhv4XjtLg3QU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080"></script> -->
-      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=949494&w=300&t=tt&d=B9UobSFA0_VBpdODQqAwoKh0kULg9emDhv4XjtLg3QU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=0d0d0d'></script>
-    </div>    
-            
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+
+          <!-- ClustrMaps Visitor Map - shows international reach -->
+          <!-- To get your own: https://clustrmaps.com/ → sign up → get embed code -->
+          <div class="footer-map">
+            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=949494&w=280&t=tt&d=B9UobSFA0_VBpdODQqAwoKh0kULg9emDhv4XjtLg3QU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=0d0d0d'></script>
+          </div>
+
+          <span class="footer-text">&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. Built with Jekyll.</span>
+          <div class="footer-links">
+            <a href="https://github.com/{{ site.author.github }}" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=tnYU0E8AAAAJ" class="footer-link" target="_blank" rel="noopener">Scholar</a>
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
       </footer>
+
     </div>
 
-    {% include scripts.html %}
+    <!-- Theme toggle script -->
+    <script>
+      // Theme toggle
+      function toggleTheme() {
+        var html = document.documentElement;
+        var current = html.getAttribute('data-theme');
+        var next = (current === 'dark') ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateToggleIcon(next);
+      }
 
+      function updateToggleIcon(theme) {
+        var btn = document.querySelector('.theme-toggle');
+        if (!btn) return;
+        if (theme === 'dark') {
+          btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+        } else {
+          btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        }
+      }
+
+      // Mobile nav toggle
+      function toggleNav() {
+        var nav = document.querySelector('.nav-links');
+        nav.classList.toggle('is-open');
+      }
+
+      // Init
+      document.addEventListener('DOMContentLoaded', function() {
+        var theme = document.documentElement.getAttribute('data-theme') || 'light';
+        updateToggleIcon(theme);
+      });
+    </script>
   </body>
 </html>

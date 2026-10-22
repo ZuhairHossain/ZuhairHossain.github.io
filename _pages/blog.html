@@ -1,0 +1,36 @@
+---
+# ============================================
+# BLOG PAGE
+# ============================================
+# Lists all blog posts from the _posts/ directory.
+# Posts are sorted newest-first automatically by Jekyll.
+# To add a new post, create a file in _posts/ with the format:
+#   YYYY-MM-DD-title-slug.md
+# ============================================
+layout: single
+title: "Blog"
+permalink: /blog/
+author_profile: true
+---
+
+<!-- ============================================
+     BLOG POST LISTING
+     Posts are automatically loaded from _posts/ directory.
+     Each post needs frontmatter with: title, date, excerpt, tags
+     ============================================ -->
+
+<div class="pub-list">
+  {% for post in site.posts %}
+  <div class="pub-item">
+    <div class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    <div class="pub-venue">{{ post.date | date: "%B %d, %Y" }}</div>
+    <div class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</div>
+    <div class="pub-links">
+      {% for tag in post.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+      <a href="{{ post.url | relative_url }}" class="btn btn--outline btn--small">Read More →</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
