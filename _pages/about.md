@@ -61,26 +61,26 @@ My research focuses on **Human-Computer Interaction**, aiming to solve real-worl
 
 ## News & Updates
 
-<div class="news-list">
-  <div class="news-item">
-    <span class="news-date">Jul 2025</span>
-    <span class="news-content">Paper published at <b>IEEE COMPSAC 2025</b>: <em>"Examining Large Language Models Within Autism-Related Contexts: A Systematic Review of Bias and (Mis) Representation"</em> - a collaboration with the NEAT Lab at Western Washington University.</span>
-  </div>
+  <!-- Keep newest items at the top -->
   <div class="news-item">
     <span class="news-date">Sep 2025</span>
     <span class="news-content">Joined <a href="https://therapbd.com/">Therap (BD) Ltd.</a> as a DevOps Engineer in the DevOps Team.</span>
   </div>
   <div class="news-item">
-    <span class="news-date">Jun 2024</span>
-    <span class="news-content">Started remote research collaboration with <a href="https://faculty.wwu.edu/">Western Washington University</a> on mental health analysis of neurodivergent individuals (NEAT Lab).</span>
+    <span class="news-date">Jul 2025</span>
+    <span class="news-content">Paper published at <b>IEEE COMPSAC 2025</b>: <em>"Examining Large Language Models Within Autism-Related Contexts: A Systematic Review of Bias and (Mis) Representation"</em> - a collaboration with the NEAT Lab at Western Washington University.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Dec 2024</span>
+    <span class="news-content">Presented first-authored paper at NSysS'24: 11th International Conference on Networking, Systems and Security.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Sep 2024</span>
     <span class="news-content">Virtual internship at Empathetic Computing Lab, University of South Australia & University of Auckland - EEG-based user input preference detection.</span>
   </div>
   <div class="news-item">
-    <span class="news-date">Dec 2024</span>
-    <span class="news-content">Presented first-authored paper at NSysS'24: 11th International Conference on Networking, Systems and Security.</span>
+    <span class="news-date">Jun 2024</span>
+    <span class="news-content">Started remote research collaboration with <a href="https://faculty.wwu.edu/">Western Washington University</a> on mental health analysis of neurodivergent individuals (NEAT Lab).</span>
   </div>
   <div class="news-item">
     <span class="news-date">Feb 2024</span>

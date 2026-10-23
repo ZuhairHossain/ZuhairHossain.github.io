@@ -41,9 +41,31 @@
   @extend .card;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &[data-hidden="true"] {
     display: none;
+  }
+}
+
+.portfolio-card__pin {
+  position: absolute;
+  top: $space-md;
+  right: $space-md;
+  font-size: 1.1rem;
+  line-height: 1;
+  background: var(--surface-alt, rgba(0, 0, 0, 0.06));
+  border-radius: $radius-full;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity $transition-fast;
+
+  .portfolio-card:hover & {
+    opacity: 1;
   }
 }
 

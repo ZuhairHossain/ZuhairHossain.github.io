@@ -37,13 +37,19 @@ author_profile: true
 <div class="portfolio-grid" id="portfolio-grid">
 
   <!-- ============================================
-       SOFTWARE PROJECTS
-       Independent projects, hackathon projects, course projects
+       HOW PINNING & SORTING WORKS:
+       - Add data-pinned="true" to pin a card to the top
+       - Add a 📌 span inside pinned cards for the visual icon
+       - data-date="YYYY-MM" is used for sorting (newest first)
+       - Pinned items always appear first, then the rest by date
        ============================================ -->
 
-  <div class="portfolio-card" data-category="software">
+  <!-- SOFTWARE PROJECTS (sorted newest first) -->
+
+  <div class="portfolio-card" data-category="software" data-date="2023-01" data-pinned="true">
     <img class="portfolio-card__thumb" src="/images/portfolio-healthcare.png" alt="Healthcare Chatbot">
     <span class="portfolio-card__category">Software</span>
+    <span class="portfolio-card__pin" title="Pinned project">📌</span>
     <div class="portfolio-card__title">Healthcare Chatbot - NLP-based Patient Support</div>
     <p class="portfolio-card__desc">A text-based healthcare chatbot providing 24/7 access to information and personalized support, reducing burden on healthcare workers. Built with Python, NLP, Heroku, Docker, Ngrok, and Rasa framework.</p>
     <div class="portfolio-card__links">
@@ -54,7 +60,7 @@ author_profile: true
     </div>
   </div>
 
-  <div class="portfolio-card" data-category="software">
+  <div class="portfolio-card" data-category="software" data-date="2023-01">
     <span class="portfolio-card__category">Software</span>
     <div class="portfolio-card__title">Maternal Health Prediction - ML in Nigeria</div>
     <p class="portfolio-card__desc">AI algorithms to predict maternal health risks in Nigeria. Developed a user-friendly web app and dashboard for risk assessments and data visualization to enhance maternal health outcomes through targeted interventions.</p>
@@ -65,7 +71,18 @@ author_profile: true
     </div>
   </div>
 
-  <div class="portfolio-card" data-category="software">
+  <div class="portfolio-card" data-category="software" data-date="2022-01">
+    <span class="portfolio-card__category">Software</span>
+    <div class="portfolio-card__title">BracU Faculty Info</div>
+    <p class="portfolio-card__desc">An electronic classroom where multiple users can view and simultaneously draw on a "chalkboard" with each person's edits synchronized. Built with Flutter and Dart.</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Flutter</span>
+      <span class="tag">Dart</span>
+      <span class="tag">2022</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="software" data-date="2021-01">
     <span class="portfolio-card__category">Software</span>
     <div class="portfolio-card__title">AI-driven Secure Online Marketplace</div>
     <p class="portfolio-card__desc">Analyzed Bangladesh's e-commerce sector to identify technology, trust, and transaction issues. Developed AI-driven solutions for fraud detection, product recommendations, and marketplace improvements. Findings made open source.</p>
@@ -77,7 +94,7 @@ author_profile: true
     </div>
   </div>
 
-  <div class="portfolio-card" data-category="software">
+  <div class="portfolio-card" data-category="software" data-date="2021-01">
     <span class="portfolio-card__category">Software</span>
     <div class="portfolio-card__title">Crop Yield Prediction - Food Security in Kenya</div>
     <p class="portfolio-card__desc">Identified underutilized farming land using satellite imaging, applied Kenyan open-source satellite imagery datasets for crop yield prediction, and developed a weather info sharing system for farmers.</p>
@@ -89,18 +106,7 @@ author_profile: true
     </div>
   </div>
 
-  <div class="portfolio-card" data-category="software">
-    <span class="portfolio-card__category">Software</span>
-    <div class="portfolio-card__title">BracU Faculty Info</div>
-    <p class="portfolio-card__desc">An electronic classroom where multiple users can view and simultaneously draw on a "chalkboard" with each person's edits synchronized. Built with Flutter and Dart.</p>
-    <div class="portfolio-card__links">
-      <span class="tag">Flutter</span>
-      <span class="tag">Dart</span>
-      <span class="tag">2022</span>
-    </div>
-  </div>
-
-  <div class="portfolio-card" data-category="software">
+  <div class="portfolio-card" data-category="software" data-date="2020-06">
     <span class="portfolio-card__category">Software</span>
     <div class="portfolio-card__title">ROBUST - Podcast Platform</div>
     <p class="portfolio-card__desc">A podcast website where users can listen to audio shows and download audio to personal devices.</p>
@@ -112,33 +118,9 @@ author_profile: true
     </div>
   </div>
 
-  <!-- ============================================
-       COURSES & CERTIFICATIONS
-       Add courses, workshops, and bootcamps here.
-       ============================================ -->
+  <!-- COURSES & CERTIFICATIONS (sorted newest first) -->
 
-  <div class="portfolio-card" data-category="courses">
-    <span class="portfolio-card__category">Course</span>
-    <div class="portfolio-card__title">CITI Program - Research Ethics</div>
-    <p class="portfolio-card__desc">Completed CITI Program training on responsible conduct of research and human subjects protection.</p>
-    <div class="portfolio-card__links">
-      <a href="/files/certificates/Hossain_CITI.pdf" class="btn btn--outline btn--small" target="_blank">📄 Certificate</a>
-      <span class="tag">Ethics</span>
-    </div>
-  </div>
-
-  <div class="portfolio-card" data-category="courses">
-    <span class="portfolio-card__category">Course</span>
-    <div class="portfolio-card__title">Mobile App Development (Flutter) - BASIS & SEIP</div>
-    <p class="portfolio-card__desc">Completed mobile application development course using Flutter framework. Organized by BASIS and Skills for Employment Investment Program (SEIP).</p>
-    <div class="portfolio-card__links">
-      <span class="tag">Flutter</span>
-      <span class="tag">Dart</span>
-      <span class="tag">2021-2022</span>
-    </div>
-  </div>
-
-  <div class="portfolio-card" data-category="courses">
+  <div class="portfolio-card" data-category="courses" data-date="2025-07">
     <span class="portfolio-card__category">Course</span>
     <div class="portfolio-card__title">Writing for Interdisciplinary Computing Audiences - COMPASS '25</div>
     <p class="portfolio-card__desc">Professional workshop on writing for interdisciplinary computing audiences at COMPASS 2025 conference.</p>
@@ -149,7 +131,28 @@ author_profile: true
     </div>
   </div>
 
-  <div class="portfolio-card" data-category="courses">
+  <div class="portfolio-card" data-category="courses" data-date="2024-01">
+    <span class="portfolio-card__category">Course</span>
+    <div class="portfolio-card__title">CITI Program - Research Ethics</div>
+    <p class="portfolio-card__desc">Completed CITI Program training on responsible conduct of research and human subjects protection.</p>
+    <div class="portfolio-card__links">
+      <a href="/files/certificates/Hossain_CITI.pdf" class="btn btn--outline btn--small" target="_blank">📄 Certificate</a>
+      <span class="tag">Ethics</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="courses" data-date="2021-10">
+    <span class="portfolio-card__category">Course</span>
+    <div class="portfolio-card__title">Mobile App Development (Flutter) - BASIS & SEIP</div>
+    <p class="portfolio-card__desc">Completed mobile application development course using Flutter framework. Organized by BASIS and Skills for Employment Investment Program (SEIP).</p>
+    <div class="portfolio-card__links">
+      <span class="tag">Flutter</span>
+      <span class="tag">Dart</span>
+      <span class="tag">2021-2022</span>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-category="courses" data-date="2016-04">
     <span class="portfolio-card__category">Course</span>
     <div class="portfolio-card__title">British Council - Upper-Intermediate (B2) English</div>
     <p class="portfolio-card__desc">Senior Young Learners, Upper-Intermediate (B2) Level Course at British Council.</p>
@@ -166,27 +169,47 @@ author_profile: true
 
 <script>
 // ============================================
-// PORTFOLIO FILTER SCRIPT
-// Filters cards by category when a filter button is clicked.
-// Categories are defined in data-category attribute on each card.
+// PORTFOLIO FILTER + SORT SCRIPT
+//
+// HOW TO PIN A PROJECT:
+//   1. Add data-pinned="true" to the card's div
+//   2. Add <span class="portfolio-card__pin" title="Pinned project">📌</span> inside it
+//
+// Sorting: Pinned first, then by data-date (newest first)
 // ============================================
 function filterPortfolio(category) {
-  var cards = document.querySelectorAll('.portfolio-card');
+  var grid = document.getElementById('portfolio-grid');
+  var cards = Array.from(grid.querySelectorAll('.portfolio-card'));
   var buttons = document.querySelectorAll('.filter-btn');
-  
-  buttons.forEach(function(btn) {
-    btn.classList.remove('active');
-  });
+
+  // Update active button
+  buttons.forEach(function(btn) { btn.classList.remove('active'); });
   event.target.classList.add('active');
-  
+
+  // Sort: pinned first, then by date (newest first)
+  cards.sort(function(a, b) {
+    var aPinned = a.getAttribute('data-pinned') === 'true' ? 1 : 0;
+    var bPinned = b.getAttribute('data-pinned') === 'true' ? 1 : 0;
+    if (aPinned !== bPinned) return bPinned - aPinned;
+    var aDate = a.getAttribute('data-date') || '0000-00';
+    var bDate = b.getAttribute('data-date') || '0000-00';
+    return bDate.localeCompare(aDate);
+  });
+
+  // Re-append sorted cards and apply filter
   cards.forEach(function(card) {
+    grid.appendChild(card);
     if (category === 'all' || card.getAttribute('data-category') === category) {
-      card.setAttribute('data-hidden', 'false');
       card.style.display = '';
     } else {
-      card.setAttribute('data-hidden', 'true');
       card.style.display = 'none';
     }
   });
 }
+
+// Sort on initial page load
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.querySelector('.filter-btn.active');
+  if (btn) btn.click();
+});
 </script>
